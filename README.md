@@ -31,6 +31,9 @@ Design a solution where:
 **Deliverable:**  
 Write a code snippet (in Node.js or Go) that shows how you handle the communication with the external service, including error handling and fallback logic. A complete system is not necessary. Focus on the critical logic.
 
+**Solution:**
+I have implemented a retry pattern using an external library to handle temporary failures. While a queue is another useful pattern for this scenario, I am saving its implementation for Task 4.
+
 ## Challenge 2: Multi-Step Operation Across Independent Services
 
 **Scenario:**  
@@ -47,6 +50,9 @@ Design a resilient, decoupled structure to perform this flow. Ensure that partia
 
 **Deliverable:**  
 Provide a code snippet (in Node.js or Go) that shows how you control this flow, including how failure and rollback are handled. No need to implement the services, just show the control logic.
+
+**Solution:**
+I'm using the Saga pattern to solve this problem, which ensures data consistency by handling rollbacks across distributed services.
 
 ## Challenge 3: Triggering Side Effects Without Tight Coupling
 
