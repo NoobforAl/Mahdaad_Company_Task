@@ -71,6 +71,9 @@ Propose a structure that allows these actions to happen in a decoupled, resilien
 **Deliverable:**  
 Write a code snippet (in Node.js or Go) that demonstrates how an event is published and consumed by another component. It can be a minimal in-memory or simulated setup; the focus is on event handling.
 
+**Solution:**
+I implemented a solution for this problem using the pub/sub pattern, where a Go channel functions as a lightweight message broker.
+
 ## Challenge 4: Keeping Distributed Data in Sync Over Time
 
 **Scenario:**  
