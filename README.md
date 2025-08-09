@@ -19,7 +19,7 @@ We look forward to seeing your ideas, code clarity, and architectural thinking i
 ## Challenge 1: Handling Slow or Unavailable External Services
 
 **Scenario:**  
-Your service depends on a third-party API for sending SMS. Sometimes, the external API becomes slow or unavailable, causing your system to lag or fail under load.
+Your service depends on a third-party API for sending `SMS`. Sometimes, the external API becomes slow or unavailable, causing your system to lag or fail under load.
 
 **Task:**  
 Design a solution where:
@@ -49,7 +49,7 @@ These services are fully decoupled. If any step fails, all previous actions must
 Design a resilient, decoupled structure to perform this flow. Ensure that partial failures trigger proper rollback or compensation logic.
 
 **Deliverable:**  
-Provide a code snippet (in Node.js or Go) that shows how you control this flow, including how failure and rollback are handled. No need to implement the services, just show the control logic.
+Provide a code snippet (in Node.js or Go) that shows how you control this flow, including `how failure` and rollback are handled. No need to implement the services, just show the control logic.
 
 **Solution:**
 I'm using the Saga pattern to solve this problem, which ensures data consistency by handling rollbacks across distributed services.
@@ -84,3 +84,5 @@ Design a mechanism to ensure **eventual synchronization** of data, even in the p
 
 **Deliverable:**  
 Write a code snippet that shows how you queue or retry an update operation until it reaches the destination service successfully. Keep it simple and focused.
+
+**Solution:**
