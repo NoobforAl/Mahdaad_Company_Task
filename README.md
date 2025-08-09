@@ -86,3 +86,4 @@ Design a mechanism to ensure **eventual synchronization** of data, even in the p
 Write a code snippet that shows how you queue or retry an update operation until it reaches the destination service successfully. Keep it simple and focused.
 
 **Solution:**
+To address this challenge, I implemented a queue with Go's standard list package and utilized a third-party library for the retry logic.
