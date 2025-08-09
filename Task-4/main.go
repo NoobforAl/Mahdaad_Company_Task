@@ -14,7 +14,7 @@ func main() {
 
 	service := NewServiceUpdateProfile(brokerService)
 
-	for i := 0; i < 100_000; i++ {
+	for i := 0; i < 50; i++ {
 		job := Job{
 			ID:         fmt.Sprintf("job-%d", i),
 			Data:       fmt.Sprintf("data-%d", i),
@@ -24,7 +24,7 @@ func main() {
 		brokerService.AppendToQueue("update_profile", job)
 	}
 
-	ctx, cancel := context.WithTimeout(context.Background(), 40*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
 	if err := service.Run(ctx); err != nil {
