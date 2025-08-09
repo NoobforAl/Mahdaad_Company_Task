@@ -87,3 +87,28 @@ Write a code snippet that shows how you queue or retry an update operation until
 
 **Solution:**
 To address this challenge, I implemented a queue with Go's standard list package and utilized a third-party library for the retry logic.
+
+### Run Tasks
+
+```
+ make help
+================================================
+🎯 Mahdaad Company Tasks - Available Commands
+================================================
+
+Usage:  make [target]
+
+Available targets:
+  help              Show this help message
+  all               Run all tasks sequentially with delays
+  clean             Clean build artifacts and temporary files
+  build             Build all tasks into executable binaries
+
+Examples:
+  make run-task-1   - Run only Task-1
+  make all          - Run all tasks sequentially
+  make build        - Build all tasks
+  make clean        - Clean build artifacts
+
+================================================
+```
